@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "youtube ad block",
+  "version": "1.0",
+  "description": "dissappear ads on youtube videos",
+  "permissions": ["http://www.youtube.com/", "activeTab"],
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["jquery-3.2.1.min.js", "myscript.js"]
+    }
+  ]
+}
